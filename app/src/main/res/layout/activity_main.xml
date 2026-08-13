@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SWITCH PRO"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginTop="170dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Card container -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center_horizontal">
+
+                <!-- Connect Button -->
+                <Button
+                    android:id="@+id/btnConnect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Connect to Device"
+                    android:backgroundTint="#1E88E5"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif-medium" />
+
+                <!-- Control Buttons (2 columns) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btnOn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ON"
+                        android:backgroundTint="#43A047"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <Button
+                        android:id="@+id/btnOff"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="OFF"
+                        android:backgroundTint="#E53935"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+
+                <!-- AUTO Button (Full width) -->
+                <Button
+                    android:id="@+id/btnAuto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AUTO"
+                    android:backgroundTint="#F9A825"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-medium" />
+
+                <!-- Timetable Button -->
+                <Button
+                    android:id="@+id/btnOpenSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/purple_200"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Open Timetable"
+                    android:textColor="#FFFFFF" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="24dp"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/editTempThreshold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Temp Threshold"
+                        android:inputType="numberDecimal"
+                        android:background="@android:drawable/edit_text"
+                        android:padding="10dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#888888" />
+
+                    <Button
+                        android:id="@+id/btnSendThreshold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Send"
+                        android:backgroundTint="@color/black"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginStart="8dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text="© KAIRAXUS"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>

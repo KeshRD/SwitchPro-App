@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sgy</string>
+    <string name="title_activity_schedule">Schedule</string>
+    <string name="title_activity_schedule_receiver">ScheduleReceiver</string>
+    <string name="title_activity_bluetooth_helper">BluetoothHelper</string>
+    <string name="title_activity_schedule_adapter">ScheduleAdapter</string>
+</resources>
